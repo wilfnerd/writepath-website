@@ -236,3 +236,27 @@ ul{list-style:none}
     text-align: center;
   }
 }
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* pushes logo left, toggle right */
+  gap: 1rem;
+}
+.nav-toggle {
+  margin-left: auto; /* ensures it hugs the right edge */
+}
+.foot-tag,
+.foot-mail {
+  font-size: 0.85rem;   /* smaller text */
+  line-height: 1.4;
+}
+
+@media (max-width: 720px) {
+  .foot-tag,
+  .foot-mail {
+    font-size: 0.8rem;  /* slightly smaller on phones */
+    display: block;
+    margin-top: 0.4rem;
+  }
+}
+
