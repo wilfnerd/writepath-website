@@ -290,9 +290,4 @@ ul{list-style:none}
   color: #CFE4C8;
   transition: color 0.3s ease;
 }
-@media (max-width: 720px) {
-  .site-footer {
-    text-align: center;
-  }
-}
 

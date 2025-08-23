@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | WritePath</title>
+  <style>
+    /* ====== Reset ====== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* ====== Header ====== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #fff; /* plain header bar */
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      z-index: 1000;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0.8rem 1rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 45px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #2f3e1e;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      font-weight: 500;
+      color: #2f3e1e;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #8a9a5b;
+    }
+
+    /* ====== Hero Section ====== */
+    .hero {
+      margin-top: 65px; /* offset for fixed header */
+      background: linear-gradient(135deg, #d0f0c0, #8a9a5b);
+      color: #2f3e1e;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* ====== About Content ====== */
+    .about {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #2f3e1e;
+      text-align: center;
+    }
+
+    .about p {
+      margin-bottom: 1.2rem;
+      text-align: justify;
+    }
+
+    /* ====== Footer ====== */
+    footer {
+      background: #2f3e1e;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+    }
+
+    .foot-tag, .foot-mail {
+      display: block;
+      font-size: 0.85rem;
+      opacity: 0.9;
+    }
+
+    /* ====== Responsive ====== */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        right: 0;
+        display: none;
+        padding: 1rem 0;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #2f3e1e;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .menu-toggle {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="WritePath Logo">
+        <span>WritePath</span>
+      </div>
+      <span class="menu-toggle">☰</span>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>About WritePath</h1>
+    <p>Guiding ideas into words, and words into impact. We help clients communicate with clarity, purpose, and influence across every stage of their journey.</p>
+  </section>
+
+  <!-- About Content -->
+  <section class="about">
+    <h2>Our Story</h2>
+    <p>WritePath was founded with a single mission: to transform the way people communicate in an increasingly competitive world. We recognized that while ideas are plentiful, the ability to articulate them effectively remains a challenge for many professionals, academics, and organizations. That’s where we step in.</p>
+    
+    <p>From immigration petitions and academic writing, to recommendation and expert letters, media features, and precision editing, we provide tailored solutions that elevate your message. Every service we offer is designed to meet the highest standards of clarity, credibility, and impact.</p>
+    
+    <p>At WritePath, we believe that great communication is the foundation of leadership, influence, and progress. This belief fuels everything we do and drives us to continually raise the standard of excellence for ourselves and those we serve.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 WritePath. All Rights Reserved.</p>
+    <span class="foot-tag">Precision writing for petitions, academia, and media.</span>
+    <span class="foot-mail">writepathconsultinglimited@gmail.com</span>
+  </footer>
+
+  <script>
+    // Toggle mobile nav
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navUl = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', () => {
+      navUl.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
