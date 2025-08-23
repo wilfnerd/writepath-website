@@ -118,7 +118,7 @@ ul{list-style:none}
 /* Process */
 .process{background:linear-gradient(180deg,#ffffff 0%, #F3F8EE 100%)}
 .steps{
-  counter-reset: step; display:grid; gap:1rem; grid-template-columns:repeat(5,1fr);
+  counter-reset: step; display:grid; gap:1rem; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
 }
 .steps li{
   background:#fff;border:1px solid var(--line);border-radius:.9rem;padding:1rem .9rem;position:relative
@@ -222,4 +222,17 @@ ul{list-style:none}
 .trust-badges i {
   color: #8A9A5B; /* tea green */
   font-size: 18px;
+}
+@media (max-width: 720px) {
+  .footer-grid {
+    grid-template-columns: 1fr; /* Stack footer sections */
+    text-align: center;
+  }
+  .social-row {
+    justify-content: center; /* Center icons */
+  }
+  .foot-base {
+    flex-direction: column;
+    text-align: center;
+  }
 }
