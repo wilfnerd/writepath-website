@@ -156,7 +156,15 @@ ul{list-style:none}
 
 /* Footer */
 .site-footer{background:#0F1410;color:#E6F1E3;margin-top:2rem;padding-top:2.2rem;border-top:1px solid #0b0f0c}
-.footer-grid{display:grid;gap:1.25rem;grid-template-columns:2fr 1fr 1fr;align-items:start}
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .foot-mail,
+  .foot-tag {
+    max-width: 100%;
+  }
+}
 .foot-brand .brand{color:#E6F1E3}
 .foot-brand .brand-logo{filter:brightness(0) invert(1)}
 .foot-tag{color:#CFE4C8;margin-top:.35rem}
@@ -261,5 +269,21 @@ ul{list-style:none}
     display: block;
     margin-top: 0.4rem;
   }
+}
+.footer-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  align-items: start;
+}
+.foot-mail {
+  font-size: 0.85rem;
+  word-break: break-word;   /* keeps email inside */
+  max-width: 260px;         /* prevents stretching */
+}
+.foot-tag {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  max-width: 260px;
 }
 
