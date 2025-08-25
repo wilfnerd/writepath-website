@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- SEO -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services | WritePath Consulting</title>
+  <meta name="description" content="Explore WritePath Consulting’s services: immigration petitions, academic writing, expert letters, media drafting, editing, and business plans." />
+  <meta name="theme-color" content="#8A9A5B" />
+
+  <!-- Fonts + Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Expandable Card Styling */
+    .card {
+      background: #f8fdf6;
+      border: 1px solid rgba(0,0,0,.05);
+      border-radius: .8rem;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease;
+    }
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    }
+    .card h2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      font-size: 1.3rem;
+      color: #0F1410;
+    }
+    .card-sub {
+      margin: .3rem 0;
+      color: #5d7350;
+      font-size: .9rem;
+      font-weight: 500;
+    }
+    .card-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, opacity 0.5s ease;
+      opacity: 0;
+    }
+    .card.open .card-content {
+      max-height: 500px; /* big enough for content */
+      opacity: 1;
+    }
+    .card-toggle {
+      font-size: 1rem;
+      transition: transform 0.3s ease;
+    }
+    .card.open .card-toggle {
+      transform: rotate(180deg);
+    }
+/* Center hero content on About page */
+.hero-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* ensures text lines are centered */
+  flex-direction: column;
+  min-height: 50vh; /* optional: gives breathing space */
+}
+
+.hero-copy h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-copy .lead {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto; /* centers text block */
+  line-height: 1.6;
+}
+/* Reduce space between hero and first section (Services) */
+.hero.section {
+  padding-bottom: 2rem; /* instead of default large padding */
+}
+
+.services-detail.section {
+  margin-top: 0; /* remove double spacing */
+}
+
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="WritePath logo" class="brand-logo" />
+        <span class="brand-name">WritePath Consulting</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="divider"></li>
+          <li><a href="contact.html" class="btn btn-outline">Contact</a></li>
+          <li><a href="signup.html" class="btn">Sign Up</a></li>
+          <li><a href="signin.html" class="btn ghost">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero section">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Our Services</h1>
+        <p class="lead">Six specialized pillars designed to strengthen your petitions, publications, and communications.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Sections -->
+  <section class="section services-detail">
+    <div class="container">
+
+      <article id="immigration" class="card">
+        <h2>
+          Immigration Petitions 
+          <span class="card-toggle"><i class="fas fa-chevron-down"></i></span>
+        </h2>
+        <p class="card-sub">EB1A • EB2-NIW • O-1</p>
+        <div class="card-content">
+          <p>Strategic drafting of petition letters, personal statements, expert letters, and exhibits. Every argument is evidence-driven, structured, and aligned with adjudicator expectations.</p>
+        </div>
+      </article>
+
+      <article id="academic" class="card">
+        <h2>
+          Academic Writing
+          <span class="card-toggle"><i class="fas fa-chevron-down"></i></span>
+        </h2>
+        <p class="card-sub">Research • Papers • Theses</p>
+        <div class="card-content">
+          <p>Support at every stage of academic publishing — manuscript structuring, literature framing, editing for clarity, and journal-specific formatting.</p>
+        </div>
+      </article>
+
+      <article id="letters" class="card">
+        <h2>
+          Recommendation & Expert Letters
+          <span class="card-toggle"><i class="fas fa-chevron-down"></i></span>
+        </h2>
+        <p class="card-sub">Faculty • Industry • Government</p>
+        <div class="card-content">
+          <p>Tailored, credible letters that strengthen applications or petitions. We match voice and background to highlight authentic authority.</p>
+        </div>
+      </article>
+
+      <article id="media" class="card">
+        <h2>
+          Media Piece Drafting
+          <span class="card-toggle"><i class="fas fa-chevron-down"></i></span>
+        </h2>
+        <p class="card-sub">Features • Op-eds • Profiles</p>
+        <div class="card-content">
+          <p>Publication-ready narratives for press, blogs, or organizational outlets. Sharp angles, quotable lines, and strong editorial polish.</p>
+        </div>
+      </article>
+
+      <article id="editing" class="card">
+        <h2>
+          Editing & Proofreading
+          <span class="card-toggle"><i class="fas fa-chevron-down"></i></span>
+        </h2>
+        <p class="card-sub">Technical • Professional</p>
+        <div class="card-content">
+          <p>Comprehensive editing from line to structure, plus proofreading to ensure clarity, accuracy, and compliance with target guidelines.</p>
+        </div>
+      </article>
+
+      <article id="business" class="card">
+        <h2>
+          Business Plans & Proposals
+          <span class="card-toggle"><i class="fas fa-chevron-down"></i></span>
+        </h2>
+        <p class="card-sub">Startups • SMEs • Projects</p>
+        <div class="card-content">
+          <p>Investor-ready plans and persuasive proposals. Structured, data-driven, and polished to inspire confidence and action.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta">
+    <div class="container cta-wrap">
+      <h2>Need help with your next project?</h2>
+      <p>Get in touch and let’s design a path that works for your goals.</p>
+      <div class="cta-row">
+        <a class="btn" href="contact.html">Start a Project</a>
+        <a class="btn btn-light" href="mailto:writepathconsultinglimited@gmail.com">Email Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html">
+          <img src="images/logo.png" alt="WritePath logo" class="brand-logo" />
+          <span class="brand-name">WritePath Consulting</span>
+        </a>
+        <p class="foot-tag">Precision writing for petitions, academia, and media.</p>
+        <p class="foot-mail"><a href="mailto:writepathconsultinglimited@gmail.com">writepathconsultinglimited@gmail.com</a></p>
+      </div>
+      <div class="foot-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-social">
+        <h4>Social</h4>
+        <div class="social-row">
+          <a class="social" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a class="social" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="social" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="social" href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container foot-base">
+      <p>© <span id="year"></span> WritePath Consulting. All rights reserved.</p>
+      <nav class="foot-legal">
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+  <script>
+    // Accordion-style expandable cards
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        // close all cards first
+        cards.forEach(c => {
+          if (c !== card) c.classList.remove('open');
+        });
+        // toggle clicked one
+        card.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>

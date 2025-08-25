@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- SEO Basics -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog | WritePath Consulting</title>
+  <meta name="description" content="Insights and resources from WritePath Consulting — guiding you with expert advice on immigration petitions, academic writing, media drafting, and more." />
+  <meta name="theme-color" content="#8A9A5B" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="WritePath Consulting Blog" />
+  <meta property="og:description" content="Guides, insights, and strategies for petitions, academia, and media." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/og-cover.jpg" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ===== Blog Specific Styles ===== */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: #f0f9f0;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      color: #4a5d23;
+      margin-bottom: 10px;
+    }
+    .hero p.lead {
+      font-size: 1.2em;
+      color: #555;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .blog-list {
+      padding: 40px 20px;
+    }
+    .blog-list .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card h3 {
+      font-size: 1.3em;
+      margin: 16px 20px 8px;
+      color: #4a5d23;
+    }
+    .card p {
+      margin: 0 20px 16px;
+      color: #555;
+      font-size: 0.95em;
+      flex-grow: 1;
+    }
+    .card .link {
+      margin: 0 20px 20px;
+      font-weight: 600;
+      color: #8a9a5b;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .card .link:hover {
+      color: #4a5d23;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header (identical to home page) -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="WritePath Consulting home">
+        <img src="images/logo.png" alt="WritePath Consulting logo" class="brand-logo" />
+        <span class="brand-name">WritePath Consulting</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li class="divider" aria-hidden="true"></li>
+          <li><a href="contact.html" class="btn btn-outline">Contact</a></li>
+          <li><a href="signup.html" class="btn">Sign Up</a></li>
+          <li><a href="signin.html" class="btn ghost">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero section">
+    <div class="container hero-center">
+      <h1>Insights & Resources</h1>
+      <p class="lead">
+        Stay updated with expert advice, immigration insights, academic guidance, and more —
+        curated by WritePath Consulting.
+      </p>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="section blog-list">
+    <div class="container grid-3">
+      <!-- Blog Post 1 -->
+      <article class="card reveal">
+        <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=800&q=80"
+             alt="Immigration Consultation" />
+        <h3><a href="#">Top 5 Mistakes to Avoid in Your Immigration Application</a></h3>
+        <p>Our experts share the common pitfalls applicants face and how WritePath can guide you through a smoother journey.</p>
+        <a class="link" href="#">Read more →</a>
+      </article>
+
+      <!-- Blog Post 2 -->
+      <article class="card reveal">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80"
+             alt="Academic Writing" />
+        <h3><a href="#">How Strong Academic Writing Opens Global Opportunities</a></h3>
+        <p>Learn how professional academic writing services can boost your research visibility and impact.</p>
+        <a class="link" href="#">Read more →</a>
+      </article>
+
+      <!-- Blog Post 3 -->
+      <article class="card reveal">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80"
+             alt="Career Coaching" />
+        <h3><a href="#">Crafting a CV That Stands Out Internationally</a></h3>
+        <p>Strategies from WritePath consultants to position your skills for competitive global markets.</p>
+        <a class="link" href="#">Read more →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer (identical to home page) -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html">
+          <img src="images/logo.png" alt="WritePath Consulting logo" class="brand-logo" />
+          <span class="brand-name">WritePath Consulting</span>
+        </a>
+        <p class="foot-tag">Precision writing for petitions, academia, and media.</p>
+        <p class="foot-mail"><a href="mailto:writepathconsultinglimited@gmail.com">writepathconsultinglimited@gmail.com</a></p>
+      </div>
+
+      <div class="foot-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-social">
+        <h4>Social</h4>
+        <div class="social-row">
+          <a class="social" href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a class="social" href="#" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a class="social" href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a class="social" href="#" aria-label="TikTok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container foot-base">
+      <p>© <span id="year"></span> WritePath Consulting. All rights reserved.</p>
+      <nav class="foot-legal">
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
