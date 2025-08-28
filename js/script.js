@@ -54,3 +54,20 @@ backToTop.addEventListener('click', () => {
 // Current year in footer
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+
+// Sign In form handler
+const signinForm = document.getElementById("signinForm");
+if (signinForm) {
+  signinForm.addEventListener("submit", e => {
+    e.preventDefault();
+    const email = signinForm.email.value.trim();
+    const password = signinForm.password.value.trim();
+    if (!email || !password) {
+      alert("Please fill in all fields.");
+      return;
+    }
+    console.log("Sign in request:", { email, password });
+    alert("Sign in successful (demo). Backend integration pending.");
+  });
+}
