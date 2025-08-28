@@ -429,4 +429,47 @@ ul{list-style:none}
 .auth-switch a:hover {
   text-decoration: underline;
 }
+/* Footer grid fixes */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  text-align: center; /* center all children by default */
+}
+
+.foot-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* logo, name, tagline centered */
+  text-align: center;
+}
+
+.foot-brand .brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.foot-brand .brand-logo {
+  max-width: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.foot-tag,
+.foot-mail {
+  margin: 0.3rem 0;
+}
+
+/* On larger screens, keep links & socials aligned left/right but brand still centered */
+@media (min-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+  }
+  .foot-brand {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
 
